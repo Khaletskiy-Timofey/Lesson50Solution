@@ -25,5 +25,5 @@ int sum_main_and_second_diagonales_elements(int** matrix, int n)
 		sum += matrix[i][n - i - 1];
 	}
 
-	return sum - (n % 2 == 1 ? matrix[(n - 1) / 2][(n - 1) / 2] : 0);
+	return sum - (n % 2 == 1 ? matrix[n / 2][n / 2] : 0);
 }
