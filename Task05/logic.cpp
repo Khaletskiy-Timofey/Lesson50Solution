@@ -99,15 +99,16 @@ void get_last_local_minimum(int** matrix, int n, int m, int* x, int* y)
 	{
 		return;
 	}
-
-	for (int i = 0; i < n; i++)
+	
+	for (int i = n - 1; i >= 0; i--)
 	{
-		for (int j = 0; j < m; j++)
+		for (int j = m - 1; j >= 0; j--)
 		{
 			if (is_local_minimum(matrix, n, m, j, i))
 			{
 				*y = j + 1;
 				*x = i + 1;
+				return;
 			}
 		}
 	}
