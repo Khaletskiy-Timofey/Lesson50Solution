@@ -1,0 +1,1 @@
+﻿int get_min_maximum(int** matrix, int n, int m);

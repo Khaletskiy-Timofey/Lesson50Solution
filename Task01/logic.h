@@ -1,0 +1,1 @@
+﻿double calculate_arithmetical_mean_of_nonzero_elements(int** matrix, int n, int m);
