@@ -93,13 +93,12 @@ bool is_local_minimum(int** matrix, int n, int m, int x, int y)
 
 void get_last_local_minimum(int** matrix, int n, int m, int* x, int* y)
 {
+	*x = 0;
+
 	if (matrix == nullptr)
 	{
-		*x = 0;
 		return;
 	}
-
-	*x = 0;
 
 	for (int i = 0; i < n; i++)
 	{
